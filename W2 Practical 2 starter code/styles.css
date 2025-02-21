@@ -1,0 +1,26 @@
+body {
+    font-family: sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Lucida Sans';
+}
+
+h1 {
+    font-size: 2em;
+}
+
+#page-title {
+    font-size: 3em;
+    font-family: Impact;
+}
+
+a {
+    color:chocolate;
+    text-decoration: none;
+} 
+
+div #only-content {
+    background-color: white;
+    margin: 10vh 10vw;
+}
