@@ -1,5 +1,6 @@
 body {
     font-family: sans-serif;
+    background-color: #efebce;
 }
 
 h1, h2, h3 {
@@ -23,4 +24,56 @@ a {
 div #only-content {
     background-color: white;
     margin: 10vh 10vw;
+    padding: 5vh;
+}
+
+#page-title, #date {
+    display: inline-block;
+}
+
+#date {
+    text-align: right;
+}
+
+/* To get around this, you can set the widths of the page title and date elements
+using relative units that add up to 100%. */
+header {
+    width: 100%;
+    font-size: 1rem;
+}
+
+
+/* Nav Bar Styling */
+
+nav {
+    background-color: #d8a48f;
+}
+
+nav li {
+    /* list-style-image: url(https://static.vecteezy.com/system/resources/thumbnails/027/191/073/small_2x/pixel-art-sakura-flower-icon-png.png); */
+    color: #61321e; 
+    padding: 3vw;
+    display: inline-block;
+}
+
+nav a {
+    color: #61321e;
+    display: block;
+    line-height: 2rem;
+}
+
+
+/* Main Content Styling */
+main {
+    float: left;
+}
+
+/* Footer Styling */
+
+footer {
+    background-color: #bb8487;
+    color: whitesmoke;
+    text-align: center;
+    margin: auto;
+    padding: 2vw;
 }
