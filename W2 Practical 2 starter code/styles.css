@@ -29,6 +29,8 @@ div #only-content {
 
 #page-title, #date {
     display: inline-block;
+    width: 49.5%;
+    /* Width less than 50% to 'fix' the whitespace inline-block issue */
 }
 
 #date {
@@ -38,10 +40,8 @@ div #only-content {
 /* To get around this, you can set the widths of the page title and date elements
 using relative units that add up to 100%. */
 header {
-    width: 100%;
     font-size: 1rem;
 }
-
 
 /* Nav Bar Styling */
 
@@ -50,10 +50,14 @@ nav {
 }
 
 nav li {
-    /* list-style-image: url(https://static.vecteezy.com/system/resources/thumbnails/027/191/073/small_2x/pixel-art-sakura-flower-icon-png.png); */
     color: #61321e; 
-    padding: 3vw;
     display: inline-block;
+    padding: 3vw;
+}
+
+nav li:hover, nav li:hover a {
+    background-color: #bb8487;
+    color: aliceblue;
 }
 
 nav a {
@@ -62,10 +66,18 @@ nav a {
     line-height: 2rem;
 }
 
+main, aside {
+    display: inline-block;
+}
 
 /* Main Content Styling */
 main {
     float: left;
+    width: 75%;
+}
+
+aside {
+    width: 25%;
 }
 
 /* Footer Styling */
@@ -76,4 +88,6 @@ footer {
     text-align: center;
     margin: auto;
     padding: 2vw;
+
+    clear: both;
 }
